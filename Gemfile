@@ -54,4 +54,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-gem "bootstrap", "~> 5.3"
+gem "bootstrap", "~> 5.0.2"
