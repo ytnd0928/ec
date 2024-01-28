@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2024_01_28_104755) do
   end
 
   create_table "idols", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci", force: :cascade do |t|
+    t.bigint "user_id"
     t.string "name"
     t.string "group_name"
     t.string "member_color"
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(version: 2024_01_28_104755) do
     t.string "showroom_account"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_idols_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci", force: :cascade do |t|
@@ -39,4 +41,5 @@ ActiveRecord::Schema.define(version: 2024_01_28_104755) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "idols", "users"
 end
