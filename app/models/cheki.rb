@@ -1,0 +1,2 @@
+class Cheki < ApplicationRecord
+end

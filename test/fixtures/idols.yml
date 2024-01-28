@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  group_name: MyString
+  member_color: MyString
+  x_account: MyString
+  instagram_account: MyString
+  tiktok_account: MyString
+  showroom_account: MyString
+
+two:
+  name: MyString
+  group_name: MyString
+  member_color: MyString
+  x_account: MyString
+  instagram_account: MyString
+  tiktok_account: MyString
+  showroom_account: MyString
